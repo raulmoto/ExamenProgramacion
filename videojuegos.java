@@ -21,6 +21,9 @@ public class videojuegos {
 				if (VF == true) {
 					String[] tabla = c.split(",");
 					System.out.println("leemos");
+					for (int i = 0; i<tabla.length; i++) {
+						 
+					}
 					
 					System.out.println(tabla[2]);
 					
