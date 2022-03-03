@@ -2,6 +2,7 @@ package examenProgramacion;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class videojuegos {
@@ -11,7 +12,7 @@ public class videojuegos {
 		File f = new File(ruta);
 		try {
 			
-			
+			ArrayList <String> arr = new ArrayList<String>();
 			Scanner scn = new Scanner (f);
 			boolean VF = false;
 			while(scn.hasNextLine()) {
@@ -20,11 +21,13 @@ public class videojuegos {
 				if (VF == true) {
 					String[] tabla = c.split(",");
 					System.out.println("leemos");
-					for(int i =0; i<tabla.length;i++) {
-						String plataforma = tabla[2];
-						System.out.println(plataforma);
+					
+					System.out.println(tabla[2]);
+					
 						
-					}
+					
+					
+					//PS,DS,PSV,Wii,N64,PSP,PC,PS3,PS4,GBA,PS2,3DS,Wiiu,NG,XB,X360,DC
 					
 					
 				}else {
